@@ -1,0 +1,50 @@
+.name_area_bg{
+    background-color:#115599;
+    color: #DFE1E7;
+}
+
+.right_join_list{
+    border-top:1px solid #ffffff;
+    background-color: #D6E2F0;
+    color: #000;
+    height:665px;
+    overflow: scroll;
+}
+
+.chat_content_area{
+    background-color: #EDF3F8;
+    height:450px;
+    overflow: scroll;
+}
+
+.edit_area{
+    background-color: #EDF3F8;
+    height:150px;
+}
+
+.send_area{
+    background-color: #D6E2F0;
+    height:50px;
+}
+
+.left_content_part{
+    height:665px;
+    border-right:1px solid  #ffffff;
+    background-color: #D6E2F0;
+}
+
+.mid_split{
+    background-color: #D6E2F0;
+    height:15px;
+}
+.am-form-group  textarea{
+    width:100%;
+    height:158px;
+    background-color: #EDF3F8;
+    border:none !important;
+}
+.tip{
+    color: red;
+    font-weight: bold;
+}
+
