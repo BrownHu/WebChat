@@ -1,0 +1,22 @@
+完整TCP聊天室整理
+
+tcpConn.Accept() 返回一个net.con
+
+Net.listenTcp 返回一个Tcplistener
+
+net.dialtcp 返回 tcpConn
+
+client 发送消息到server
+
+Server 负责接收与 广播至其他单条连接的消息
+
+
+使用map维护所有连接
+
+使用string chan 生成消息队列
+
+服务端接收到消息立即广播至其他连接 chan <- con.read() con.Write()
+
+客户端轮训 连接 获取被广播的内容  con.Read(&buf)
+
+ 启动客户端->单个服务端启动->每次发送一个消息请求 listener.accept() -> map维护所有客户端，服务端从连接中读取信息同步至消息队列 -> 触发广播 -> 客户端轮训写
